@@ -1,0 +1,13 @@
+@use "../../mixins/index.scss";
+@import "../../mixins/breakpoints";
+
+.anchoredImage {
+  position: fixed;
+  right: 0.5rem;
+  overflow: hidden;
+  z-index: -1;
+  opacity: 0;
+  @include md {
+    opacity: 1;
+  }
+}
