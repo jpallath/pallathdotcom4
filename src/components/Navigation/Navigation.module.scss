@@ -1,0 +1,40 @@
+.navigation {
+  position: absolute;
+  bottom: 0;
+  height: 7vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3;
+  a {
+    font-family: "Jura", sans-serif;
+    font-weight: bolder;
+    color: black;
+    background: gold;
+    text-decoration: none;
+    width: 25%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+    &:first-child {
+      border-top-left-radius: 20px;
+    }
+    &:last-child {
+      border-top-right-radius: 20px;
+    }
+    &:hover {
+      background: purple;
+      color: white;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+}
