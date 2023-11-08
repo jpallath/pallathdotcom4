@@ -22,7 +22,9 @@ const Skill = ({ name, Icon, description }) => {
       onMouseLeave={() => setHover(false)}
     >
       <Icon />
-      <div className={hover == true ? styles.tooltip : styles.tooltipHidden}>
+      <div
+        className={`${styles.tooltip} ${hover == true ? styles.active : ""}`}
+      >
         <h1>{name}</h1>
         <p>{description}</p>
       </div>
