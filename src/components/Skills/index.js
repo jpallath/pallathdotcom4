@@ -16,11 +16,7 @@ export const Skills = () => {
 const Skill = ({ name, Icon, description }) => {
   const [hover, setHover] = useState(false);
   return (
-    <div
-      className={styles.skillItem}
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
-    >
+    <div className={styles.skillItem}>
       <Icon />
       <div
         className={`${styles.tooltip} ${hover == true ? styles.active : ""}`}
