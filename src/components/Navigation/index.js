@@ -7,15 +7,15 @@ export const Navigation = () => {
       <Link to="/">
         <div>Home</div>
       </Link>
-      <Link to="/portfolio">
-        <div>Portfolio</div>
+      <Link to="/history">
+        <div>History</div>
       </Link>
-      <Link to="/blog">
+      {/* <Link to="/blog">
         <div>Blog</div>
       </Link>
       <Link to="/likes">
         <div>Likes</div>
-      </Link>
+      </Link> */}
     </div>
   );
 };

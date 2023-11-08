@@ -1,3 +1,6 @@
+@use "../../mixins/index.scss";
+@import "../../mixins/breakpoints";
+
 .navigation {
   position: absolute;
   bottom: 0;
@@ -8,13 +11,16 @@
   justify-content: space-between;
   align-items: center;
   z-index: 3;
+  background: gold;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   a {
     font-family: "Jura", sans-serif;
     font-weight: bolder;
     color: black;
     background: gold;
     text-decoration: none;
-    width: 25%;
+    width: 50%;
     height: 100%;
     transition: all 0.5s ease-in-out;
 
