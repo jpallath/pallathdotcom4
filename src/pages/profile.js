@@ -9,7 +9,7 @@ export const Profile = () => {
     <div className={styles.pages}>
       <Content
         components={[
-          <PageHeader text="Jerry Pallath / Software Engineer" />,
+          <PageHeader text="Jerry Pallath / Software Engineer" key="" />,
           <ParagraphItem
             text={`Candy sesame snaps marzipan fruitcake cotton candy chupa chups biscuit
 marzipan croissant. Tootsie roll icing pastry fruitcake ice cream bear
@@ -22,6 +22,7 @@ chocolate bar chupa chups biscuit cake liquorice gingerbread candy
 canes. Croissant tootsie roll halvah cake cheesecake sweet roll chupa
 chups bear claw dessert. Carrot cake oat cake danish jelly topping ice
 cream powder danish.`}
+            key="2"
           />,
           <ParagraphItem
             text={`Caramels marzipan gummi bears marshmallow candy canes powder cotton
@@ -31,9 +32,10 @@ wafer. Gummies croissant pie caramels sugar plum pie jujubes bonbon. Oat
 cake gingerbread jelly beans danish sweet roll liquorice cotton candy
 fruitcake brownie. Dragée tootsie roll pastry gummi bears gummies
 halvah.`}
+            key="3"
           />,
-          <p>experience yada yada</p>,
-          <div>modal for resume</div>,
+          <p key="4">experience yada yada</p>,
+          <div key="5">modal for resume</div>,
         ]}
       />
       <AnchoredImage image={jerry} />
