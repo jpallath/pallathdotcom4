@@ -1,5 +1,6 @@
 import jerry from "../assets/jerry.png";
 import { AnchoredImage } from "../components/AnchoredImage";
+import { ResumeButtons } from "../components/Buttons/ResumeButtons";
 import { PageHeader } from "../components/PageHeader";
 import { ParagraphItem } from "../components/ParagraphItem";
 import { Content } from "../containers/Content";
@@ -34,8 +35,7 @@ fruitcake brownie. Dragée tootsie roll pastry gummi bears gummies
 halvah.`}
             key="3"
           />,
-          <p key="4">experience yada yada</p>,
-          <div key="5">modal for resume</div>,
+          <ResumeButtons key="3" />,
         ]}
       />
       <AnchoredImage image={jerry} />
