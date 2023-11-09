@@ -4,6 +4,7 @@ import { ResumeButtons } from "../components/Buttons/ResumeButtons";
 import { PageHeader } from "../components/PageHeader";
 import { ParagraphItem } from "../components/ParagraphItem";
 import { Content } from "../containers/Content";
+import { PhoneModal } from "../components/PhoneModal";
 import styles from "./pages.module.scss";
 export const Profile = () => {
   return (
@@ -39,6 +40,7 @@ halvah.`}
         ]}
       />
       <AnchoredImage image={jerry} />
+      <PhoneModal />
     </div>
   );
 };
