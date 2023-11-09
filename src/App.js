@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Blog } from "./pages/blog";
 import { Profile } from "./pages/profile";
 import { History } from "./pages/history";

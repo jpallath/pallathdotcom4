@@ -1,5 +1,4 @@
 import styles from "./Skills.module.scss";
-import { useState } from "react";
 import { skills } from "./list";
 export const Skills = () => {
   const SkillSet = skills.map((skill, ind) => (
@@ -14,13 +13,10 @@ export const Skills = () => {
 };
 
 const Skill = ({ name, Icon, description }) => {
-  const [hover, setHover] = useState(false);
   return (
     <div className={styles.skillItem}>
       <Icon />
-      <div
-        className={`${styles.tooltip} ${hover == true ? styles.active : ""}`}
-      >
+      <div className={`${styles.tooltip} `}>
         <h1>{name}</h1>
         <p>{description}</p>
       </div>
