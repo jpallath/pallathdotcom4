@@ -11,7 +11,6 @@ const phoneModalSlice = createSlice({
   initialState,
   reducers: {
     togglePhoneModal: (state, action) => {
-      console.log(action.payload);
       Object.assign(state, action.payload);
     },
   },

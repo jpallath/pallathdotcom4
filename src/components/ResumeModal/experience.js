@@ -27,7 +27,7 @@ export const experience = [
   },
   {
     position: "Senior Software Engineer",
-    company: "Mayfair fka Paperclip",
+    company: "Mayfair FKA Paperclip",
     location: "San Francisco, California",
     dates: "June 2022 - March 2023",
     experience: [
@@ -49,7 +49,7 @@ export const experience = [
   },
   {
     position: "Software Engineer",
-    company: "Peacock / NBC-Universal",
+    company: "Peacock / NBC Universal",
     location: "New York, New York",
     dates: "January 2020 - June 2022",
     experience: [

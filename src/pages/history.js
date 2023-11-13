@@ -10,9 +10,9 @@ export const History = () => {
     <div className={styles.pages}>
       <Content
         components={[
-          <PageHeader text="History" key="1" />,
-          <Timeline key="2" />,
-          <Skills key="3" />,
+          <PageHeader text="History" key="11" />,
+          <Timeline key="21" />,
+          <Skills key="31" />,
         ]}
       />
       <PhoneModal />

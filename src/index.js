@@ -6,10 +6,12 @@ import reportWebVitals from "./reportWebVitals";
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 import phoneModalSlice from "./features/phoneModal";
+import resumeModalSlice from "./features/resumeModal";
 
 const store = configureStore({
   reducer: {
     phoneModal: phoneModalSlice,
+    resumeModal: resumeModalSlice,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({ serializableCheck: false }),

@@ -29,8 +29,8 @@ export const skills = [
 ];
 
 export const interests = [
-  "listens to podcasts about politics, technology, startup culture, music, and pop culture",
-  "reads at least one nonfiction book a month and various fiction",
-  "enjoys talking about the history of technology",
-  "a huge One Piece fan",
+  "Listens to podcasts about politics, technology, startup culture, music, and pop culture,",
+  "Reads at least one nonfiction book a month and various fiction,",
+  "Enjoys talking about the history of technology,",
+  "A huge One Piece fan",
 ];
