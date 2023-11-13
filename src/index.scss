@@ -131,4 +131,22 @@ table {
 .vertical-timeline::before {
   background: black !important;
 }
+.vertical-timeline-element-icon {
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
 
+span.vertical-timeline-element-date {
+  font-family: "Jura", sans-serif;
+}
+
+@media only screen and (max-width: 1169px) {
+  .vertical-timeline-element {
+    position: relative;
+    margin: 2em 0;
+    width: 70%;
+  }
+}

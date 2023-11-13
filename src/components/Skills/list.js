@@ -22,110 +22,110 @@ export const skills = [
     name: "Javascript",
     icon: JSIcon,
     description:
-      "Have been using Javascript since 2018, arguably before that. A strong understanding of JS that's been the foundation for my skills in NodeJs, React, Angular, and Vue",
+      "Javascript was the first programming language I felt comfortable in. It lead me into learning Javascript frameworks including React, Vue, and jQuery",
   },
   {
     name: "Python",
     icon: PythonIcon,
     description:
-      "Have been using Javascript since 2018, arguably before that. A strong understanding of JS that's been the foundation for my skills in NodeJs, React, Angular, and Vue",
+      "Python is by far my favorite language. In my free time I try to code up quick scripts to make my life easier. All of my lambda functions, professionally, is written in Python.",
   },
   {
     name: "Ruby",
     icon: RubyIcon,
     description:
-      "Have been using Javascript since 2018, arguably before that. A strong understanding of JS that's been the foundation for my skills in NodeJs, React, Angular, and Vue",
+      "Ruby is my least used programming language, but a lot of its logic can be derived from my skills in Javascript and Python",
   },
   {
     name: "PHP",
     icon: PhpIcon,
     description:
-      "Have been using Javascript since 2018, arguably before that. A strong understanding of JS that's been the foundation for my skills in NodeJs, React, Angular, and Vue",
+      "I was just new enough in Web Development where PHP was still being used in many bigger companies. A lot of my development required some PHP know-how",
   },
   {
     name: "HTML",
     icon: HtmlIcon,
     description:
-      "Have been using Javascript since 2018, arguably before that. A strong understanding of JS that's been the foundation for my skills in NodeJs, React, Angular, and Vue",
+      "Not much to say, a Frontend Engineer needs to know how to use HTML",
   },
   {
     name: "CSS",
     icon: CssIcon,
     description:
-      "Have been using Javascript since 2018, arguably before that. A strong understanding of JS that's been the foundation for my skills in NodeJs, React, Angular, and Vue",
+      "I am not a designer, but I can make any designer's dreams come to life with my CSS skills which stem into SCSS development (and Styled Components)",
   },
   {
     name: "MySql",
     icon: MySqlIcon,
     description:
-      "Have been using Javascript since 2018, arguably before that. A strong understanding of JS that's been the foundation for my skills in NodeJs, React, Angular, and Vue",
+      "A developer needs to know how to use SQL databases to manage our data as consistently as possible",
   },
   {
     name: "PostgreSQL",
     icon: PostGreSqlIcon,
     description:
-      "Have been using Javascript since 2018, arguably before that. A strong understanding of JS that's been the foundation for my skills in NodeJs, React, Angular, and Vue",
+      "A developer needs to know how to use SQL databases to manage our data as consistently as possible",
   },
 
   {
     name: "MongoDB",
     icon: MongoIcon,
     description:
-      "Have been using Javascript since 2018, arguably before that. A strong understanding of JS that's been the foundation for my skills in NodeJs, React, Angular, and Vue",
+      "A NoSQL database servbice makes my development faster, this was the first database technology I picked up",
   },
   {
     name: "Git",
     icon: GitIcon,
     description:
-      "Have been using Javascript since 2018, arguably before that. A strong understanding of JS that's been the foundation for my skills in NodeJs, React, Angular, and Vue",
+      "If a developer doesn't know how to use Git, that's a huge problem.",
   },
   {
     name: "Ruby on Rails",
     icon: RailsIcon,
     description:
-      "Have been using Javascript since 2018, arguably before that. A strong understanding of JS that's been the foundation for my skills in NodeJs, React, Angular, and Vue",
+      "My Ruby development is lacking but I can pick it up fairly quickly if needed",
   },
   {
     name: "WordPress",
     icon: WordPressIcon,
     description:
-      "Have been using Javascript since 2018, arguably before that. A strong understanding of JS that's been the foundation for my skills in NodeJs, React, Angular, and Vue",
+      "My first few jobs required an understanding of Wordpress and how to hack it to get what you want",
   },
   {
     name: "Nodejs",
     icon: NodeIcon,
     description:
-      "Have been using Javascript since 2018, arguably before that. A strong understanding of JS that's been the foundation for my skills in NodeJs, React, Angular, and Vue",
+      "I loved that Javascript became a technology that can be used in both Frontend and Backend development. I initially used Express, but eventually other opportunities required me to learn Nestjs and Hapi",
   },
 
   {
     name: "React",
     icon: ReactIcon,
     description:
-      "Have been using Javascript since 2018, arguably before that. A strong understanding of JS that's been the foundation for my skills in NodeJs, React, Angular, and Vue",
+      "I love developing in React, and love to see what other engineers have figured to make data flow more efficient.",
   },
   {
     name: "Vue",
     icon: VueIcon,
     description:
-      "Have been using Javascript since 2018, arguably before that. A strong understanding of JS that's been the foundation for my skills in NodeJs, React, Angular, and Vue",
+      "I picked up Vue fairly quickly when I started working at ASCAP. I love how quickly you can develop with it, and its fairly low learning curve",
   },
   {
     name: "Angular",
     icon: AngularIcon,
     description:
-      "Have been using Javascript since 2018, arguably before that. A strong understanding of JS that's been the foundation for my skills in NodeJs, React, Angular, and Vue",
+      "Angular was the go to development framework while working at Peacock. There are a lot of headaches, but the community is strong enough to help you find your solutions",
   },
   {
     name: "SASS/SCSS",
     icon: SassIcon,
     description:
-      "Have been using Javascript since 2018, arguably before that. A strong understanding of JS that's been the foundation for my skills in NodeJs, React, Angular, and Vue",
+      "SCSS has definitely improved my styling exponentially. I can finally code my CSS like how I code my Javascript.",
   },
   {
     name: "JIRA",
     icon: JiraIcon,
     description:
-      "Have been using Javascript since 2018, arguably before that. A strong understanding of JS that's been the foundation for my skills in NodeJs, React, Angular, and Vue",
+      "As a product driven engineer, JIRA is very important to keep all team members honest in the organization. It lets us keep our development transparent and predictable.",
   },
 ];

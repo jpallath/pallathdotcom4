@@ -23,6 +23,7 @@ const Skill = ({ name, Icon, description }) => {
   return (
     <div className={styles.skillItem} onClick={() => setModal()}>
       <Icon />
+      <div className={styles.moreInfo}>...</div>
       <div className={`${styles.tooltip} `}>
         <h1>{name}</h1>
         <p>{description}</p>
