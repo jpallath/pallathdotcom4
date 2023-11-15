@@ -17,7 +17,7 @@ export const Resume = () => {
     return <h4 key={ind}>{int}</h4>;
   });
   return (
-    <div className={styles.resume}>
+    <div className={styles.resumeModal}>
       <div className={styles.title}>Jerry Pallath</div>
       <div className={styles.userInformation}>
         <h2>Software Engineer</h2>
