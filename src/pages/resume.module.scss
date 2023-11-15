@@ -1,0 +1,163 @@
+@use "../mixins/index.scss";
+@import "../mixins/breakpoints";
+
+.resume {
+  padding: 10px;
+}
+
+.modal {
+  width: 75%;
+  height: 75vh;
+  overflow: scroll;
+  border-radius: 24px;
+  padding: 20px;
+  background-color: white;
+  section {
+    display: flex;
+    flex-direction: column;
+    h1 {
+      font-family: "Sono", monospace;
+      border-bottom: black solid 1px;
+      padding-bottom: 15px;
+      text-align: center;
+    }
+    p {
+      font-family: "Sono", monospace;
+      padding-top: 15px;
+      text-align: center;
+    }
+  }
+}
+
+.modalHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 5px;
+}
+
+.modalContainer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  z-index: -100;
+  transition: opacity 0.25s ease-in;
+  &.active {
+    opacity: 1;
+    position: fixed;
+    height: 100vh;
+    transition: opacity 0.25s ease-in;
+    z-index: 10;
+  }
+  &.hidden {
+    opacity: 0;
+  }
+}
+
+.title {
+  font-size: 32px;
+  border-bottom: purple solid 3px;
+}
+
+.resumeModal {
+  padding: 0 5px;
+  .userInformation {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+  }
+  .workExperience {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5px;
+    h3 {
+      font-weight: bolder;
+    }
+  }
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+}
+
+.workExp {
+  padding: 5px 0;
+  border-bottom: solid purple 1px;
+  .wTitle {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .dates {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .actualExperience {
+    padding: 5px 0;
+    ul {
+      padding: 5px 0;
+    }
+  }
+}
+@include md {
+  .workExp {
+    padding: 5px 0;
+    border-bottom: solid purple 1px;
+    .wTitle {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+    .dates {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .actualExperience {
+      padding: 5px 0;
+    }
+  }
+}
+
+.skills {
+  padding: 5px 0;
+}
+
+.position,
+.company,
+.school,
+.interests h2,
+.skills h2 {
+  font-weight: bold;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+}
+
+.educationItem {
+  div {
+    display: flex;
+    justify-content: space-between;
+  }
+  padding: 5px 0;
+  border-bottom: solid purple 1px;
+}
+
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  padding: 5px 0;
+  border-bottom: solid purple 1px;
+}

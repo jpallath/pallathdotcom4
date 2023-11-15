@@ -1,48 +1,9 @@
-import { useDispatch, useSelector } from "react-redux";
-import { ReactComponent as CloseIcon } from "../../assets/actionsSvgs/close.svg";
-import styles from "./ResumeModal.module.scss";
-import { experience } from "./experience";
-import { education } from "./education";
-import { skills, interests } from "./skills";
-import { toggleResumeModal } from "../../features/resumeModal";
+import styles from "./resume.module.scss";
+import { experience } from "../components/ResumeModal/experience";
+import { education } from "../components/ResumeModal/education";
+import { skills, interests } from "../components/ResumeModal/skills";
 
-export const ResumeModal = () => {
-  const resumeModal = useSelector((state) => state.resumeModal);
-  const { showModal } = resumeModal;
-  const dispatch = useDispatch();
-  const closeModal = () => {
-    dispatch(toggleResumeModal({ showModal: false }));
-  };
-  return (
-    <div
-      className={`${styles.modalContainer} ${
-        showModal ? styles.active : styles.hidden
-      }`}
-      onClick={() => closeModal()}
-    >
-      <div className={styles.modal}>
-        <ModalHeader />
-        <section>
-          <Resume />
-        </section>
-      </div>
-    </div>
-  );
-};
-
-const ModalHeader = () => {
-  const dispatch = useDispatch();
-  const closeModal = () => {
-    dispatch(toggleResumeModal({ showModal: false }));
-  };
-  return (
-    <div className={styles.modalHeader} onClick={() => closeModal()}>
-      <CloseIcon />
-    </div>
-  );
-};
-
-const Resume = () => {
+export const Resume = () => {
   const WorkExperiences = experience.map((exp) => {
     return <WorkExperience experience={exp} key={exp.position} />;
   });
@@ -56,7 +17,7 @@ const Resume = () => {
     return <h4 key={ind}>{int}</h4>;
   });
   return (
-    <div className={styles.resumeModal}>
+    <div className={styles.resume}>
       <div className={styles.title}>Jerry Pallath</div>
       <div className={styles.userInformation}>
         <h2>Software Engineer</h2>
