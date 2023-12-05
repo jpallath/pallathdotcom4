@@ -37,7 +37,3 @@ Email me at Pallathj@gmail.com`}
     </div>
   );
 };
-
-// ,
-// (<p>experience yada yada</p>),
-// (<div>modal for resume</div>)),
