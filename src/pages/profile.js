@@ -1,5 +1,3 @@
-import jerry from "../assets/jerry.png";
-import { AnchoredImage } from "../components/AnchoredImage";
 import { ResumeButtons } from "../components/Buttons/ResumeButtons";
 import { PageHeader } from "../components/PageHeader";
 import { ParagraphItem } from "../components/ParagraphItem";
@@ -32,7 +30,6 @@ Email me at Pallathj@gmail.com`}
           <ResumeButtons key="7" />,
         ]}
       />
-      <AnchoredImage image={jerry} />
       <ResumeModal />
     </div>
   );

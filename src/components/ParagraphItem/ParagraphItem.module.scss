@@ -1,6 +1,10 @@
+@import "../../mixins/index.scss";
+@import "../../mixins/colors";
+
 .paragraphItem {
-  font-family: "Sono", monospace;
+  font-family: "Rubik", monospace;
   width: 75%;
   margin: 1%;
   font-size: 20px;
+  color: $text;
 }

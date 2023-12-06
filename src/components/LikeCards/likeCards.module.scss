@@ -1,5 +1,6 @@
 @use "../../mixins/index.scss";
 @import "../../mixins/breakpoints";
+@import "../../mixins/colors";
 
 .likeCardsContainer {
   width: 100%;
@@ -12,15 +13,15 @@
 .likeCard {
   width: 100%;
   height: 180px;
-  color: black;
+  color: $text;
   border-radius: 15px;
   position: relative;
   margin: 10px;
   border: solid black 0.5px;
-  background: rgba(0, 0, 0, 0);
+  background: $primary;
   transition: background ease-in 0.25s;
   &:hover {
-    background: rgba(0, 0, 0, 0.5);
+    background: $secondary;
     transition: background ease-in 0.25s;
   }
   .baseInformation {
@@ -44,10 +45,10 @@
       padding: 5px;
       gap: 5px;
       h3 {
-        font-family: "Jura", sans-serif;
+        font-family: "Mallanna", sans-serif;
       }
       p {
-        font-family: "Sono", monospace;
+        font-family: "Rubik", monospace;
         overflow: hidden;
       }
     }
@@ -81,10 +82,10 @@
         width: 100%;
         font-size: 20px;
         h3 {
-          font-family: "Jura", sans-serif;
+          font-family: "Mallanna", sans-serif;
         }
         p {
-          font-family: "Sono", monospace;
+          font-family: "Rubik", monospace;
         }
       }
       img {
@@ -109,7 +110,7 @@
       cursor: pointer;
       transition: background 0.25s ease-in;
       .data {
-        font-family: "Sono", monospace;
+        font-family: "Rubik", monospace;
         background: rgba(0, 0, 0, 0);
         transition: background ease-in 0.25s;
         color: white;
@@ -151,10 +152,10 @@
           border-radius: 15px;
           .text {
             width: h3 {
-              font-family: "Jura", sans-serif;
+              font-family: "Mallanna", sans-serif;
             }
             p {
-              font-family: "Sono", monospace;
+              font-family: "Rubik", monospace;
             }
           }
           img {
