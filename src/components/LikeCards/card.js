@@ -23,9 +23,7 @@ export const Card = ({ data }) => {
             <h1>{data.title}</h1>
             <p>{data.description}</p>
           </div>
-          <div className="likeButtons">
-            <button>Discuss</button>
-          </div>
+          <div className="likeButtons">{/* <button>Discuss</button> */}</div>
         </div>
       </div>
     </div>
