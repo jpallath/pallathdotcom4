@@ -29,7 +29,7 @@ export const Likes = () => {
 
   useEffect(() => {
     fetchLikes();
-  }, []);
+  });
   return (
     <div className={styles.pages}>
       <Content

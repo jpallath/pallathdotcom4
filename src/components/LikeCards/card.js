@@ -8,7 +8,7 @@ export const Card = ({ data }) => {
     return styles.overlay;
   };
   return (
-    <div className={styles.likeCard}>
+    <div className={styles.likeCard} onClick={openLink}>
       <div className={styles.baseInformation}>
         <img src={data.image} alt="" />
         <div className={styles.text}>
