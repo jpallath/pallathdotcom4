@@ -1,5 +1,6 @@
 @use "../../mixins/index.scss";
 @import "../../mixins/breakpoints";
+@import "../../mixins/colors";
 
 .navigation {
   position: absolute;
@@ -11,14 +12,14 @@
   justify-content: space-between;
   align-items: center;
   z-index: 3;
-  background: gold;
+  background: $primary;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   a {
     font-family: "Mallanna", sans-serif;
     font-weight: bolder;
     color: black;
-    background: gold;
+    background: $primary;
     text-decoration: none;
     width: 50%;
     height: 100%;
@@ -38,7 +39,7 @@
       border-top-right-radius: 20px;
     }
     &:hover {
-      background: purple;
+      background: $secondary;
       color: white;
       transition: all 0.5s ease-in-out;
     }

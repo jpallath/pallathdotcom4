@@ -1,3 +1,5 @@
+@import "../../../mixins/index.scss";
+
 .resumeButtons {
   display: flex;
   justify-content: flex-end;
@@ -7,13 +9,14 @@
   button {
     border-radius: 8px;
     padding: 15px 25px;
-    background: rgb(119, 6, 119);
-    color: white;
+    background: $primary;
+    color: $text;
     font-family: "Rubik", monospace;
     cursor: pointer;
     // border: rgb(119, 6, 119) 1px solid;
     &:active {
-      background: rgb(83, 6, 83);
+      color: white;
+      background: $secondary;
     }
   }
 }
