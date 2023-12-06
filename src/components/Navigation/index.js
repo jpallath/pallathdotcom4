@@ -12,10 +12,10 @@ export const Navigation = () => {
       </Link>
       {/* <Link to="/blog">
         <div>Blog</div>
-      </Link>
+  </Link>*/}
       <Link to="/likes">
         <div>Likes</div>
-      </Link> */}
+      </Link>
     </div>
   );
 };
