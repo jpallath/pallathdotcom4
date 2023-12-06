@@ -13,7 +13,7 @@ export const Card = ({ data }) => {
         <img src={data.image} alt="" />
         <div className={styles.text}>
           <h3>{data.title}</h3>
-          <p>{data.description}</p>
+          {/* <p>{data.description}</p> */}
         </div>
       </div>
       <div className={overlay()} onClick={openLink}>
