@@ -18,7 +18,7 @@ export const Likes = () => {
   const fetchLikes = async () => {
     try {
       const fetchLikes = await fetchFunction(
-        "https://qzso8y7ew8.execute-api.us-east-1.amazonaws.com/Stage/links",
+        "https://ge3tyb1a3k.execute-api.us-east-1.amazonaws.com/staging/likes",
         "GET"
       ).then((response) => response.json());
       setLikes(fetchLikes.body);
