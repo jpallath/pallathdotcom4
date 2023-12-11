@@ -7,11 +7,13 @@ import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 import phoneModalSlice from "./features/phoneModal";
 import resumeModalSlice from "./features/resumeModal";
+import likesSlice from "./features/likes";
 
 const store = configureStore({
   reducer: {
     phoneModal: phoneModalSlice,
     resumeModal: resumeModalSlice,
+    likes: likesSlice,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({ serializableCheck: false }),

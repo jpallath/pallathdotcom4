@@ -63,21 +63,9 @@
     width: 90%;
     margin: 1% 5%;
     padding: 0 2%;
-    // width: 25%;
-    // margin: 1%;
-    // height: 400px;
-    // background: grey;
-    // padding: 25px;
-    // color: white;
-    // border-radius: 15px;
-    // position: relative;
     .baseInformation {
       display: flex;
       align-items: center;
-      // display: flex;
-      // flex-direction: column;
-      // justify-content: space-between;
-      // gap: 10px;
       .text {
         width: 100%;
         font-size: 20px;
@@ -89,8 +77,8 @@
         }
       }
       img {
-        width: 200px;
-        height: auto;
+        width: 150px;
+        max-height: 150px;
       }
     }
     & > .overlay {

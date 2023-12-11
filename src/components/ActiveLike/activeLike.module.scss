@@ -1,0 +1,47 @@
+@use "../../mixins/index.scss";
+@import "../../mixins/breakpoints";
+@import "../../mixins/colors";
+
+.activeLike {
+  width: 90%;
+  margin: 0 2.5%;
+  padding: 10px;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  color: $text;
+  align-items: center;
+  justify-content: center;
+  background: $primary;
+  border-radius: 15px;
+  gap: 10px;
+  overflow: hidden;
+  border-bottom: solid $secondary 20px;
+  img {
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+  }
+}
+
+@include md {
+  .activeLike {
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    color: $text;
+    align-items: center;
+    background: $primary;
+    border-radius: 15px;
+    gap: 10px;
+    overflow: hidden;
+    img {
+      width: 200px;
+      height: auto;
+      border-radius: 15px;
+    }
+  }
+}

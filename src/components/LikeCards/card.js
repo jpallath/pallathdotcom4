@@ -1,14 +1,27 @@
+import { useDispatch } from "react-redux";
+import { updateLike } from "../../features/likes";
 import styles from "./likeCards.module.scss";
 export const Card = ({ data }) => {
-  const openLink = () => {
-    window.open(data.link, "_blank", "noopener noreferrer");
-    window.focus();
+  const dispatch = useDispatch();
+  // const openLink = () => {
+  //   window.open(data.link, "_blank", "noopener noreferrer");
+  //   window.focus();
+  // };
+  const updateLikesContainer = () => {
+    dispatch(
+      updateLike({
+        title: data.title,
+        description: data.description,
+        image: data.image,
+        link: data.link,
+      })
+    );
   };
   const overlay = () => {
     return styles.overlay;
   };
   return (
-    <div className={styles.likeCard} onClick={openLink}>
+    <div className={styles.likeCard} onClick={updateLikesContainer}>
       <div className={styles.baseInformation}>
         <img src={data.image} alt="" />
         <div className={styles.text}>
@@ -16,7 +29,7 @@ export const Card = ({ data }) => {
           {/* <p>{data.description}</p> */}
         </div>
       </div>
-      <div className={overlay()} onClick={openLink}>
+      <div className={overlay()} onClick={updateLikesContainer}>
         <div className={styles.overlayData}>
           <div className={styles.noData}></div>
           <div className={styles.data}>
