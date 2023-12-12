@@ -6,6 +6,7 @@ import styles from "./pages.module.scss";
 import { useEffect, useState } from "react";
 export const Likes = () => {
   const [likes, setLikes] = useState([]);
+  let bool = false;
 
   const fetchFunction = async (endpoint, method) => {
     try {
@@ -25,6 +26,18 @@ export const Likes = () => {
         ).then((response) => response.json());
         setLikes(fetchLikes.body);
       } catch (err) {
+        if (!bool) {
+          bool = true;
+          try {
+            const fetchLikes = await fetchFunction(
+              "https://ge3tyb1a3k.execute-api.us-east-1.amazonaws.com/staging/likes",
+              "GET"
+            ).then((response) => response.json());
+            setLikes(fetchLikes.body);
+          } catch (err) {
+            console.error(bool, err);
+          }
+        }
         console.error(err);
       }
     }
