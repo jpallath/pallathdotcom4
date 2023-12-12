@@ -35,7 +35,7 @@ export const Likes = () => {
       <Content
         components={[
           <PageHeader text="Likes" key="0" />,
-          <div className={styles.likeContainer}>
+          <div className={styles.likeContainer} key="3">
             <ActiveLike key="1" />
             <LikeCards likes={likes} key="2" />
           </div>,

@@ -3,7 +3,7 @@
 @import "../../mixins/colors";
 
 .activeLike {
-  width: 90%;
+  width: 95%;
   margin: 0 2.5%;
   padding: 10px;
   height: 50vh;
@@ -17,6 +17,7 @@
   gap: 10px;
   overflow: hidden;
   border-bottom: solid $secondary 20px;
+  // position: fixed;
   img {
     width: 200px;
     height: auto;
@@ -28,7 +29,7 @@
   .activeLike {
     margin: 10px;
     padding: 10px;
-    width: 50%;
+    width: 40%;
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -38,6 +39,7 @@
     border-radius: 15px;
     gap: 10px;
     overflow: hidden;
+    position: fixed;
     img {
       width: 200px;
       height: auto;
