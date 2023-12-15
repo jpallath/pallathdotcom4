@@ -99,79 +99,79 @@
       }
     }
     & > .overlay {
-      background: rgba(100, 100, 100, 0);
-      transition: background 0.25s ease-in;
+      // background: rgba(100, 100, 100, 0);
+      // transition: background 0.25s ease-in;
     }
     .overlay {
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -10;
-      background: rgba(100, 100, 100, 0);
-      transition: background 0.25s ease-in;
-      border-radius: 15px;
-      cursor: pointer;
-      transition: background 0.25s ease-in;
-      .data {
-        font-family: "Rubik", monospace;
-        background: rgba(0, 0, 0, 0);
-        transition: background ease-in 0.25s;
-        color: white;
-      }
+      // height: 100%;
+      // width: 100%;
+      // position: absolute;
+      // top: 0;
+      // left: 0;
+      // z-index: -10;
+      // background: rgba(100, 100, 100, 0);
+      // transition: background 0.25s ease-in;
+      // border-radius: 15px;
+      // cursor: pointer;
+      // transition: background 0.25s ease-in;
+      // .data {
+      // font-family: "Rubik", monospace;
+      // background: rgba(0, 0, 0, 0);
+      // transition: background ease-in 0.25s;
+      // color: white;
+      // }
     }
     &:hover > .baseInformation {
       h3,
       p {
-        opacity: 0;
+        color: $primary;
       }
     }
-    &:hover > .overlay {
-      z-index: 10;
-      background: rgba(100, 100, 100, 0.5);
-      transition: background 0.25s ease-in;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      transition: background 0.25s ease-in;
-      .overlayData {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        .data {
-          background: rgba(0, 0, 0, 1);
-          transition: background ease-in 0.25s;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          padding: 25px;
-          opacity: 2.5;
-          width: 80%;
-          border-radius: 15px;
-          .text {
-            width: h3 {
-              font-family: "Mallanna", sans-serif;
-            }
-            p {
-              font-family: "Rubik", monospace;
-            }
-          }
-          img {
-            width: 100%;
-            height: auto;
-          }
-        }
-      }
-      .noData {
-        height: 20px;
-      }
-    }
+    // &:hover > .overlay {
+    //   z-index: 10;
+    //   background: rgba(100, 100, 100, 0.5);
+    //   transition: background 0.25s ease-in;
+    //   display: flex;
+    //   flex-direction: column;
+    //   justify-content: space-between;
+    //   align-items: center;
+    //   transition: background 0.25s ease-in;
+    //   .overlayData {
+    //     width: 100%;
+    //     height: 100%;
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: space-between;
+    //     align-items: center;
+    //     padding: 20px;
+    //     .data {
+    //       background: rgba(0, 0, 0, 1);
+    //       transition: background ease-in 0.25s;
+    //       display: flex;
+    //       flex-direction: column;
+    //       justify-content: center;
+    //       align-items: center;
+    //       padding: 25px;
+    //       opacity: 2.5;
+    //       width: 80%;
+    //       border-radius: 15px;
+    //       .text {
+    //         width: h3 {
+    //           font-family: "Mallanna", sans-serif;
+    //         }
+    //         p {
+    //           font-family: "Rubik", monospace;
+    //         }
+    //       }
+    //       img {
+    //         width: 100%;
+    //         height: auto;
+    //       }
+    //     }
+    //   }
+    //   .noData {
+    //     height: 20px;
+    //   }
+    // }
   }
 }

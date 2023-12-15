@@ -11,14 +11,14 @@ export const ResumeButtons = () => {
   return (
     <div className={styles.resumeButtons}>
       <button onClick={() => showResume()}>View Resume</button>
-      <a
+      {/* <a
         href="https://work-files-public.s3.us-east-1.amazonaws.com/Pallath%202023%20Resume.pdf"
         download
         target="_blank"
         rel="noreferrer"
       >
         <button>Download Resume</button>
-      </a>
+      </a> */}
     </div>
   );
 };
