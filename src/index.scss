@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Mallanna:700|Rubik:400");
+@import "./mixins/index.scss";
 
 body {
   font-family: "Rubik";
@@ -167,7 +168,7 @@ table {
   border-spacing: 0;
 }
 .vertical-timeline::before {
-  background: black !important;
+  background: $primary !important;
 }
 .vertical-timeline-element-icon {
   overflow: hidden;
@@ -177,8 +178,18 @@ table {
   }
 }
 
+.vertical-timeline-element-content {
+  background: $primary !important;
+  color: $text;
+}
+
+.vertical-timeline-element--no-children {
+  display: none;
+}
+
 span.vertical-timeline-element-date {
   font-family: "Mallanna", sans-serif;
+  color: $text;
 }
 
 @media only screen and (max-width: 1169px) {
