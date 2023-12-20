@@ -1,0 +1,46 @@
+@import "../../../mixins/index.scss";
+@import "../../../mixins/breakpoints";
+@import "../../../mixins/colors";
+
+.styledButton {
+  top: 15px;
+  position: relative;
+  .button1,
+  .button2,
+  .button3 {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    transition: all ease-in 0.25s;
+    background: $primary;
+    color: $text;
+    border: transparent;
+    border-radius: 44px;
+  }
+  .button1 {
+    z-index: 3;
+  }
+  .button2 {
+    background: $primary;
+    z-index: 2;
+  }
+  .button3 {
+    background: $primary;
+    z-index: 1;
+  }
+  &:hover > .button1 {
+    background: $secondary;
+    color: $accent;
+    transition: all ease-in 0.25s;
+  }
+  &:hover > .button2 {
+    transform: translate(5px, 5px);
+    transition: all ease-in 0.25s;
+    background: #d1dce3;
+  }
+  &:hover > .button3 {
+    transform: translate(10px, 10px);
+    transition: all ease-in 0.25s;
+    background: #a0b2bd;
+  }
+}

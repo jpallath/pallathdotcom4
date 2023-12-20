@@ -1,10 +1,17 @@
-import { ResumeButtons } from "../components/Buttons/ResumeButtons";
 import { PageHeader } from "../components/PageHeader";
 import { ParagraphItem } from "../components/ParagraphItem";
 import { Content } from "../containers/Content";
 import { ResumeModal } from "../components/ResumeModal";
 import styles from "./pages.module.scss";
+import { Button } from "../components/Buttons/Button";
+import { useDispatch } from "react-redux";
+import { toggleResumeModal } from "../features/resumeModal";
 export const Profile = () => {
+  const dispatch = useDispatch();
+
+  const showResume = () => {
+    dispatch(toggleResumeModal({ showModal: true }));
+  };
   return (
     <div className={styles.pages}>
       <Content
@@ -27,7 +34,9 @@ export const Profile = () => {
 Email me at Pallathj@gmail.com`}
             key="5"
           />,
-          <ResumeButtons key="7" />,
+          <div key="6">
+            <Button buttonText={"View Resume"} clickFunction={showResume} />
+          </div>,
         ]}
       />
       <ResumeModal />

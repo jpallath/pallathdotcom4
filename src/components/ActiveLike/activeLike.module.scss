@@ -17,7 +17,12 @@
   gap: 10px;
   overflow: hidden;
   border-bottom: solid $secondary 20px;
-
+  h1 {
+    font-family: "Rubik", monospace;
+  }
+  p {
+    font-family: "Mallanna", sans-serif;
+  }
   img {
     width: 200px;
     height: auto;
