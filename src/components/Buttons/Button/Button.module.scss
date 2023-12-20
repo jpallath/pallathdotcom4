@@ -3,7 +3,7 @@
 @import "../../../mixins/colors";
 
 .styledButton {
-  top: 15px;
+  margin-top: 15px;
   position: relative;
   .button1,
   .button2,
@@ -15,7 +15,7 @@
     background: $primary;
     color: $text;
     border: transparent;
-    border-radius: 44px;
+    border-radius: 10px;
   }
   .button1 {
     z-index: 3;
