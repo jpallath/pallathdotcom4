@@ -34,7 +34,7 @@ export const Profile = () => {
 Email me at Pallathj@gmail.com`}
             key="5"
           />,
-          <div key="6">
+          <div key="6" className={styles.buttonContainer}>
             <Button buttonText={"View Resume"} clickFunction={showResume} />
           </div>,
         ]}
